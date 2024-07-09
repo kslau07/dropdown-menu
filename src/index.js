@@ -1,3 +1,3 @@
 // index.js
-
-// test change
+import './style.css';
+console.log('hello dropdown menu');
