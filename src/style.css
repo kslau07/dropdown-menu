@@ -46,7 +46,7 @@ body {
   margin-top: 0.3rem;
   background: white;
 
-  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.5, 1);
   transform: translateY(0.5rem);
   visibility: hidden;
   opacity: 0;
