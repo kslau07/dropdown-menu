@@ -19,8 +19,11 @@ dropdownBtn.addEventListener('click', (e) => {
   toggleDropdown();
 });
 
-document.documentElement.addEventListener('click', () => {
-  if (dropdownMenu.classList.contains('show')) {
+function closeDropdown(e) {
+  if ((e.type === 'click' || e.key === 'Escape') && dropdownMenu.classList.contains('show')) {
     toggleDropdown();
   }
-});
+}
+
+document.documentElement.addEventListener('click', closeDropdown);
+document.documentElement.addEventListener('keydown', closeDropdown);
