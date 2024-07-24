@@ -8,7 +8,22 @@
   <head>
     <title>Dropdown Menu</title>
     <meta charset="UTF-8" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <button class="menu-button" id="menu-button">
+      Menu
+      <box-icon name="caret-down-square" id="arrow"></box-icon>
+    </button>
+    <div class="dropdown" id="dropdown">
+      <a href="#create">
+        <box-icon name="plus-circle"></box-icon>
+        Create New
+      </a>
+      <a href="#settings">
+        <box-icon name="cog"></box-icon>
+        Settings
+      </a>
+    </div>
+    <div>I am a div that sits below menu-button + dropdown</div>
+  </body>
 </html>
